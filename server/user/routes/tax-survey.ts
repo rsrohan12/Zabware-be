@@ -8,9 +8,11 @@ const {
     validateLoginUserBody,
 } = AuthValidation;
 const {
-saveServeyForm
+saveServeyForm,
+viewServey
 } = SurveyController;
 
 router.post("/save", saveServeyForm);
+router.get("/view", viewServey)
 
 export default router;

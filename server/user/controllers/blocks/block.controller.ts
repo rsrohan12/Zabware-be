@@ -6,9 +6,7 @@ export default class BlockController {
         try {
             const { Ulb_Id } = req.body;
 
-            const {Block_Id} = req.body
-
-            const blocks: any = await BlockService.listBlocksByUlbId(Block_Id);
+            const blocks: any = await BlockService.listBlocksByUlbId(Ulb_Id);
 
             if (!blocks) {
                 return res.send({
