@@ -14,7 +14,7 @@ export class Block {
             where: {
                 Ulb_Id: Ulb_Id,
             },
-            attributes: ["Id", "Block_Name"],
+            attributes: ["Id", "Block_Name", "MC_Colony"],
         });
         if (!records) return null;
 
